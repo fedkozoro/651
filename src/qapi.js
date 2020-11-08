@@ -17,7 +17,10 @@ export default {
 		"5fa7af6b2c4ef2001e31e537": {
 			"id": "5fa7af6b2c4ef2001e31e537",
 			"name": "index",
-			"pageUrl": "index"
+			"pageUrl": "index",
+			"styles": {
+				"font": "16px Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif"
+			}
 		}
 	},
 	"mode": "production",

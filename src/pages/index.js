@@ -2,10 +2,12 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Section } from "@quarkly/components";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
+import { Menu, Section } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
 				Quarkly export
@@ -13,6 +15,12 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
+		<Section>
+			<Text margin="0px 0 24px 0" text-align="center" font="--headline2" md-font="--headline3">
+				Awesome Company
+			</Text>
+			<Menu align-self="center" exact-active-match={false} />
+		</Section>
 		<Section
 			padding="60px 0"
 			sm-padding="40px 0"
@@ -39,10 +47,16 @@ export default (() => {
 				md-font="--headline2"
 				color="--dark"
 				max-width="850px"
+				hover-color="#000000"
+				hover-text-decoration-line="line-through underline"
+				hover-text-transform="uppercase"
 			>
 				Привет!
 			</Text>
 			<Components.EmbedHTML padding="10px 10px 10px 10px" margin="10px 10px 0px 0px" position="static" transition="all 0s --transitionTimingFunction-easeIn 0s" />
+			<Link href="https://vk.com/" target="_blank">
+				Some text
+			</Link>
 		</Section>
 		<Link
 			font={"--capture"}
