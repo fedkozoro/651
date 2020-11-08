@@ -2,8 +2,16 @@ import React, { useRef, useLayoutEffect } from "react";
 import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = `
-	<div style="padding: 20px 40px;">Edit this widget on the Components's Panel</div>
-`;
+<iframe width="560" 
+	height="315" 
+	src="https://www.youtube.com/embed/Nw9VueOQmHg" 
+	frameborder="0" 
+	allow="accelerometer; autoplay; 
+	clipboard-write; encrypted-media; 
+	gyroscope; picture-in-picture" 
+	allowfullscreen>
+		</iframe>
+	`;
 
 const EmbedHTML = ({
 	children,

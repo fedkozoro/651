@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { StackItem, Stack, Section } from "@quarkly/components";
+import { Section } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -42,15 +42,7 @@ export default (() => {
 			>
 				Привет!
 			</Text>
-			<Stack margin-top="auto" color="--grey" font="--base">
-				<StackItem width="50%" md-width="100%">
-					<Text margin="0px">
-						Это образовательная интернет площадка студентов ДВГУПС, создана для того, чтобы упростить жизнь бывалым студентам вроде нас с тобой. Так как тех.отдел ДВГУПС чешет жопу и хз чем еще занимается.
-					</Text>
-				</StackItem>
-				<StackItem width="50%" md-width="100%" />
-			</Stack>
-			<Components.EmbedHTML />
+			<Components.EmbedHTML padding="10px 10px 10px 10px" margin="10px 10px 0px 0px" position="static" transition="all 0s --transitionTimingFunction-easeIn 0s" />
 		</Section>
 		<Link
 			font={"--capture"}

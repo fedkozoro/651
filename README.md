@@ -17,6 +17,11 @@
          alt="Create React App version" />
   </a>
   
+  <a href="https://github.com/fedkozoro/651/pulls">
+    <img src="https://badgen.net/github/prs/fedkozoro/651" alt="Pull Request Amount">
+  </a>
+  <img src="https://badgen.net/github/last-commit/fedkozoro/651" alt="Last commit date" />
+            
   <a href="./LICENSE">
     <img src="https://badgen.net/badge/license/MIT/blue"
          alt="License">
